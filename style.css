@@ -8,7 +8,7 @@ body {
 }
 
 main {
-    max-width: 1200px;
+    max-width: 960px;
     margin: 0 auto;
     padding: 0 1.5em;
 }
@@ -18,7 +18,7 @@ a {
 }
 
 img {
-    max-width: 480px;
+    max-width: 400px;
     width: 100%;
     margin: 20px 0;
 }
@@ -59,12 +59,14 @@ img {
 }
 
 .container {
-    margin-top: 30px;
     text-align: center;
+    padding-top: 50px;
+    margin: 0 auto;
+    max-width: 545px;
 }
 
 .content h1 {
-    font-size: 36px;
+    font-size: 37px;
     padding: 15px 0;
     margin: 0;
     letter-spacing: 1px;
@@ -76,21 +78,46 @@ img {
 }
 
 .content button {
-    font-size: 24px;
     font-weight: bold;
     background-color: #d2872c;
     color: #fff;
-    height: 68px;
     width: 80%;
+    height: 68px;
+    font-size: 24px;
     border: 0;
     outline: none;
     cursor: pointer;
-    border-radius: 20px;
+    border-radius: 10px;
     margin-top: 15px;
     box-shadow: 0;
-    transition: all 0.3s;
+    transition: background 0.3s;
 }
 
 .content button:hover {
     background-color: #d2872cd0;
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        text-align: initial;
+        max-width: 760px;
+    }
+
+    .content {
+        float: left;
+        position: relative;
+        overflow: hidden;
+        left: 76px;
+        width: 280px;
+    }
+
+    .content p {
+        font-size: 16px;
+    }
+
+    .content button {
+        width: 170px;
+        height: 40px;
+        font-size: 16px;
+    }
 }
