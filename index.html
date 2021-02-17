@@ -20,7 +20,9 @@ Start now -->
     <header>
       <nav class="navigation">
         <a href="#" class="logo">DevChallenge</a>
-        <a href="#" id="menu-toggle"></a>
+        <a href="#" id="menu-toggle" onclick="hide">
+          <i class="fas fa-bars"></i>
+        </a>
         <ul class="nav-list">
           <li><a href="#">Home</a></li>
           <li><a href="#">Features</a></li>
@@ -39,5 +41,17 @@ Start now -->
     </div>
   </main>
 </body>
+
+<script src="https://kit.fontawesome.com/6aae35a41a.js" crossorigin="anonymous"></script>
+
+<script>
+  document.getElementById('menu-toggle').onclick = (e) => {
+    let display = window.getComputedStyle(document.querySelector('.nav-list')).display
+
+    display == 'none' ?
+      document.querySelector('.nav-list').style.display = 'block'
+      : document.querySelector('.nav-list').style.display = 'none'
+  }
+</script>
 
 </html>

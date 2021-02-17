@@ -37,10 +37,11 @@ img {
     list-style: none;
     margin: 10px 0;
     padding: 0;
+    display: none;
 }
 
 .nav-list a {
-    color: #766f68;
+    color: #333;
     display: inline-block;
     width: 100%;
     padding: 10px 5px;
@@ -48,4 +49,10 @@ img {
 
 .nav-list a:hover {
     background-color: #766f6820;
+}
+
+#menu-toggle {
+    font-size: 30px;
+    float: right;
+    color: #333;
 }
