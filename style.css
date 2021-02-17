@@ -18,8 +18,8 @@ a {
 }
 
 img {
-    max-height: 360px;
-    width: auto;
+    max-width: 480px;
+    width: 100%;
 }
 
 .navigation {
