@@ -10,7 +10,7 @@ body {
 main {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 3em 1.5em;
+    padding: 0 1.5em;
 }
 
 a {
@@ -20,6 +20,7 @@ a {
 img {
     max-width: 480px;
     width: 100%;
+    margin: 20px 0;
 }
 
 .navigation {
@@ -27,7 +28,7 @@ img {
 }
 
 .logo {
-    font-size: 30px;
+    font-size: 28px;
     letter-spacing: 1px;
     font-weight: bold;
     color: #d2872c;
@@ -52,7 +53,47 @@ img {
 }
 
 #menu-toggle {
-    font-size: 30px;
+    font-size: 28px;
     float: right;
     color: #333;
+}
+
+.container {
+    margin-top: 30px;
+}
+
+.content {
+    text-align: center;
+}
+
+.content h1 {
+    font-size: 36px;
+    padding: 15px 0;
+    margin: 0;
+    letter-spacing: 1px;
+}
+
+.content p {
+    font-size: 20px;
+    margin: 15px 0;
+}
+
+.content button {
+    font-size: 24px;
+    font-weight: bold;
+    background-color: #d2872c;
+    color: #fff;
+    height: 68px;
+    width: 80%;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    border-radius: 20px;
+    margin-top: 15px;
+    box-shadow: 0;
+    transition: all 0.3s;
+}
+
+.content button:hover {
+    background-color: #d2872cd0;
 }
