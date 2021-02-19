@@ -98,6 +98,21 @@ img {
 }
 
 @media screen and (min-width: 768px) {
+    #menu-toggle {
+        display: none;
+    }
+    .nav-list {
+        display: flex;
+        float: right;
+        margin: 0;
+    }
+    .nav-list a {
+        margin: 0 10px;
+    }
+    .nav-list a:hover {
+        background: none;
+        color: #766f68;
+    }
     .container {
         text-align: initial;
         max-width: 760px;
